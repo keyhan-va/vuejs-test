@@ -1,7 +1,7 @@
 
 <template>
 <div>
-    <b-sidebar class="sidebar" aria-label="Sidebar with custom footer" no-close-on-esc  visible  no-header no-slide>
+    <b-sidebar class="sidebar"  no-close-on-esc  visible  no-header no-slide>
         <header>
           Laravel
 
@@ -61,15 +61,13 @@
 <style>
 *{
 
-    
-    margin-top: 60px;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-.sidebar .bg-light {
+.sidebar .bg-light{
   position: fixed;
   left: 0;
   width: 255px;
