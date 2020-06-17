@@ -88,7 +88,7 @@
   line-height: 29px;
   color: #707070;
   text-align: left;
-  margin-left: 48px;
+  margin-left: 35px;
   margin-top: 80px;
   margin-bottom: 40px;
   opacity: 1;
@@ -100,7 +100,7 @@
 
 .sidebar .rectangle {
   margin-top: 95px;
-  margin-left: 136px;
+  margin-left: 123px;
   height: 4px;
   width: 15px;
   background-color: rgb(255, 6, 6);
