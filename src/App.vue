@@ -1,26 +1,35 @@
 <template>
   <div id="app">
     <Sidebar />
+    <Resources />
   </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar.vue'
+import Resources from './components/Resources.vue'
 export default {
   name: 'App',
   components: {
     Sidebar,
+    Resources,
+
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #2c3e50;
-  margin-top: 60px;
+ 
+  
+}
+
+@font-face {
+  font-family: SofiaProBlack;
+  src: url(fonts/SofiaProBlack.ttf);
+}
+@font-face {
+  font-family: SofiaProSemiBold;
+  src: url(fonts/SofiaProSemiBold.ttf);
 }
 </style>
