@@ -34,6 +34,18 @@
       <div>
         <el-button type="text" >IlIustration<i class="el-icon-arrow-right"></i></el-button>
         <el-progress :percentage="50"></el-progress>
+        <div class="text1">
+          <i >01/<span style="color:#BEBDC3">04</span></i>
+        </div>
+        <div class="text2">
+          <i >The beautiful IlIstration</i>
+        </div>
+
+        <div class="twoimage">
+          <img class="img1" src=".././assets/images/Path30.png" alt="Path30">
+          <img class="img2" src=".././assets/images/Bitmap.png" alt="Path30">
+        </div>
+
       </div>
     </el-card>
 
@@ -202,7 +214,6 @@
 .center .box-card-1 p{
   font-family: SofiaProRegular;
   font-size: 13px;
-  
 }
 
 .center .box-card-1 .dot {
@@ -212,7 +223,6 @@
   border-radius: 50%;
   background-color: #ffffff !important;
   display: inline-block;
-  background-image: url('.././assets/images/format-color.png') ;
   background: transparent url('.././assets/images/format-color.png') 0% 0% no-repeat;
   background-position: center;
 }
@@ -251,6 +261,9 @@
 	display: inline-block;
 	transform: rotate(-90deg);
 }
+
+
+
 
 
 
@@ -306,6 +319,72 @@
 .center .box-card-2 .el-progress-bar__outer{
   height: 4px !important;
 }
+
+.center .box-card-2 .text1{
+  float: left;
+}
+.center .box-card-2 .text1 i{
+  font-family: SofiaProRegular;
+  font-size: 15px;
+  font-style: normal;
+  padding: 0;
+  color: #6657BB;
+  
+}
+.center .box-card-2 .text2{
+  font-family: SofiaProRegular;
+  font-size: 15px;
+  font-style: normal;
+  width: 126px;
+  margin-left: 100px;
+  padding: 0;
+  color: #F7523E;
+  
+}
+
+
+.center .box-card-2 .text2 i{
+  font-family: SofiaProRegular;
+  font-size: 14px;
+  
+  font-style: normal;
+  padding: 0;
+  color: #BEBDC3;
+  
+}
+
+.center .box-card-2 .twoimage{
+position:absolute;
+top: 157px;
+left: 25px;
+
+}
+
+.center .box-card-2 .twoimage .img1{
+z-index: 1;
+width: 170px;
+}
+
+.center .box-card-2 .twoimage .img2{
+height: 143px;
+  position: relative;
+z-index: 3;
+top: -153px;
+left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .center .box-card-3 {
