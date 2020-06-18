@@ -49,10 +49,25 @@
       </div>
     </el-card>
 
+
+
+
     <el-card class="box-card-3">
       <div>
         <el-button type="text" >Guidebook<i class="el-icon-arrow-right"></i></el-button>
         <el-progress :percentage="50"></el-progress>
+
+        <div class="text1">
+          <i >01</i>
+        </div>
+        <div class="text2">
+          <i >The type scale is a combination of thirteen styles.</i>
+        </div>
+        
+        <!-- <i class="el-icon-right arrow"></i> -->
+        <!-- <img class="arrowright" src=".././assets/images/arrow-right.png" alt="arrow"> -->
+        <el-button class="arrowright" type="text"></el-button>
+
       </div>
     </el-card>
 
@@ -439,6 +454,76 @@ left: 55px;
 .center .box-card-3 .el-progress-bar__outer{
   height: 4px !important;
 }
+
+
+.center .box-card-3 .text1{
+  float: left;
+  margin-top: 35px;
+}
+.center .box-card-3 .text1 i{
+  font-family: SofiaProRegular;
+  font-weight: bold;
+  font-size: 50px;
+  font-style: normal;
+  padding: 0;
+  color: #6657BB;
+  
+  
+}
+.center .box-card-3 .text2{
+  font-family: SofiaProRegular;
+  font-style: normal;
+  width: 126px;
+  margin-left: 70px;
+  margin-top: 40px;
+  padding: 0;
+  
+  
+}
+
+
+.center .box-card-3 .text2 i{
+  font-family: SofiaProSemiBold;
+  font-size: 14px;
+  font-style: normal;
+  padding: 0;
+  color: #938DBC;
+  
+  
+}
+
+.center .box-card-3 .arrowright{
+  /* width: 30px; */
+  margin-top: 40px;
+  margin-left: 80px;
+  background: transparent url('.././assets/images/arrow-right.png') 0% 0% no-repeat padding-box;
+
+}
+
+.center .box-card-3 .arrowright:hover{
+    transition: none;
+    margin-left: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
