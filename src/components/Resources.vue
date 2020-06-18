@@ -2,7 +2,7 @@
 <template>
 
   <div class="center">
-    <!-- <hr> -->
+
     <header>Design Resources</header>
 
     <el-select v-model="value" placeholder="This Week">
@@ -52,32 +52,34 @@
 
 
 
-    <el-card class="box-card-3">
-      <div>
-        <el-button type="text" >Guidebook<i class="el-icon-arrow-right"></i></el-button>
-        <el-progress :percentage="50"></el-progress>
-
-        <div class="text1">
-          <i >01</i>
-        </div>
-        <div class="text2">
-          <i >The type scale is a combination of thirteen styles.</i>
-        </div>
-        
-        <!-- <i class="el-icon-right arrow"></i> -->
-        <!-- <img class="arrowright" src=".././assets/images/arrow-right.png" alt="arrow"> -->
-        <el-button class="arrowright" type="text"></el-button>
-
+  <el-card class="box-card-3">
+    <div>
+      <el-button type="text" >Guidebook<i class="el-icon-arrow-right"></i></el-button>
+      <el-progress :percentage="50"></el-progress>
+      <div class="text1">
+        <i >01</i>
       </div>
-    </el-card>
-
-    <el-card class="box-card-4">
-      <div>
-        <el-button type="text" >Typography<i class="el-icon-arrow-right"></i></el-button>
-        <el-progress :percentage="50"></el-progress>
+      <div class="text2">
+        <i >The type scale is a combination of thirteen styles.</i>
       </div>
-    </el-card>
+      <el-button class="arrowright" type="text"></el-button>
+    </div>
+  </el-card>
 
+
+
+  <el-card class="box-card-4">
+    <div>
+      <el-button type="text" >Typography<i class="el-icon-arrow-right"></i></el-button>
+      <el-progress :percentage="50"></el-progress>
+    </div>
+
+    <div class="textbold">
+      <i class="text1">Semi</i><br>
+      <i class="text2">Bold</i><br>
+      <i class="text3">Type</i><br>
+    </div>
+  </el-card>
   </div>
  
 </template>
@@ -127,7 +129,7 @@
 .center{
   width: 640px;
   margin-left: 255px;
-  /* margin-top: 10px; */
+   margin-top: -7px; 
 }
 
 .center header{
@@ -389,25 +391,12 @@ left: 55px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   .center .box-card-3 {
     float: left;
     position: absolute;
     width: 220px;
     height: 320px;
-    margin-top: 395px;
+    margin-top: 402px;
     margin-left: 50px;
     border-radius: 12px;
     opacity: 1;
@@ -417,7 +406,7 @@ left: 55px;
   .center .box-card-3 .el-button{
     font-family: SofiaProSemiBold;
     font-size: 16px;
-    margin-top: 14px;
+    margin-top: 22px;
     text-align: left;
     width: 100%;
     color: #65609B;
@@ -458,7 +447,7 @@ left: 55px;
 
 .center .box-card-3 .text1{
   float: left;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 .center .box-card-3 .text1 i{
   font-family: SofiaProRegular;
@@ -475,7 +464,7 @@ left: 55px;
   font-style: normal;
   width: 126px;
   margin-left: 70px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 0;
   
   
@@ -484,7 +473,7 @@ left: 55px;
 
 .center .box-card-3 .text2 i{
   font-family: SofiaProSemiBold;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   padding: 0;
   color: #938DBC;
@@ -501,28 +490,10 @@ left: 55px;
 }
 
 .center .box-card-3 .arrowright:hover{
-    transition: none;
-    margin-left: 100px;
+     transition: .4s;
+    margin-left: 90px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -531,7 +502,7 @@ left: 55px;
     position: absolute;
     width: 220px;
     height: 320px;
-    margin-top: 395px;
+    margin-top: 402px;
     margin-left: 300px;
     border-radius: 12px;
     float: right;
@@ -542,7 +513,7 @@ left: 55px;
   .center .box-card-4 .el-button{
     font-family: SofiaProSemiBold;
     font-size: 16px;
-    margin-top: 14px;
+    margin-top: 22px;
     text-align: left;
     width: 100%;
     color: #FFFFFF;
@@ -578,8 +549,34 @@ left: 55px;
 
 .center .box-card-4 .el-progress-bar__outer{
   height: 4px !important;
+  /* position: absolute; */
 }
 
+.center .box-card-4 .textbold .text1 {
+  font-family: SofiaProSemiBold;
+  font-style: normal;
+  font-size: 65px;
+  padding-left: 15px;
+  color: #FFFFFF38;
+  
+}
+.center .box-card-4 .textbold .text2 {
+  font-family: SofiaProSemiBold;
+  font-style: normal;
+  position: relative;
+  font-size: 65px;
+  padding-left: 15px;
+  top: -60px;
+}
+.center .box-card-4 .textbold .text3 {
+  font-family: SofiaProSemiBold;
+  font-style: normal;
+  position: relative;
+  font-size: 65px;
+  padding-left: 15px;
+  top: -112px;
+  color: #FFFFFF38;
+}
 
 </style>
 
