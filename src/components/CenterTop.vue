@@ -7,7 +7,6 @@
         v-model="searchinput">
     </el-input>
 
-    
     <el-badge :value="3" class="icon">
       <a href="#"><i class="el-icon-bell"></i></a>
     </el-badge>
@@ -17,9 +16,9 @@
     </el-badge>
 
     <el-button>New Post</el-button>
-    
-
+<!-- <hr> -->
 </div>
+
  
 </template>
 
@@ -42,7 +41,8 @@
 
 <style>
 .center-top{
-    padding-left: 250px;
+    width: 640px;
+    margin-left: 255px;
     margin-top: 70px;
 }
 
@@ -56,7 +56,6 @@
 {
     border: none !important; 
 }
-
 
 .center-top .el-icon-search{
   color: black;

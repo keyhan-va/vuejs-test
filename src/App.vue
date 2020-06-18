@@ -3,6 +3,7 @@
     <Sidebar />
     <CenterTop />
     <Resources />
+    
   </div>
 </template>
 
@@ -35,4 +36,9 @@ export default {
   font-family: SofiaProSemiBold;
   src: url(fonts/SofiaProSemiBold.ttf);
 }
+@font-face {
+  font-family: SofiaProRegular;
+  src: url(fonts/SofiaProRegular.ttf);
+}
+
 </style>

@@ -1,8 +1,57 @@
 
 <template>
-<div>
+
+  <div class="center">
+    <!-- <hr> -->
+    <header>Design Resources</header>
+
+    <el-select v-model="value" placeholder="This Week">
+      <el-option
+        v-for="item in options"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value">
+      </el-option>
+    </el-select>
     
-</div>
+
+    <el-card class="box-card-1">
+      <div>
+        <el-button type="text" >Typography<i class="el-icon-arrow-right"></i></el-button>
+        <el-progress :percentage="50"></el-progress>
+        <p>The type scale is a combination of thirteen styles that are supported by the type system</p>
+      </div>
+      <span class="dot"></span>
+      <span class="dot2"></span>
+      <div >
+        <i class="text1">Aa</i>
+        <i class="text2">01/<span style="color:#BEBDC3">04</span></i>
+      </div>
+      
+    </el-card>
+
+    <el-card class="box-card-2">
+      <div>
+        <el-button type="text" >IlIustration<i class="el-icon-arrow-right"></i></el-button>
+        <el-progress :percentage="50"></el-progress>
+      </div>
+    </el-card>
+
+    <el-card class="box-card-3">
+      <div>
+        <el-button type="text" >Guidebook<i class="el-icon-arrow-right"></i></el-button>
+        <el-progress :percentage="50"></el-progress>
+      </div>
+    </el-card>
+
+    <el-card class="box-card-4">
+      <div>
+        <el-button type="text" >Typography<i class="el-icon-arrow-right"></i></el-button>
+        <el-progress :percentage="50"></el-progress>
+      </div>
+    </el-card>
+
+  </div>
  
 </template>
 
@@ -11,12 +60,32 @@
 
 
 <script>
+
   export default {
     data() {
       return {
+        options: [{
+          value: 'Option1',
+          label: 'This Week'
+        }, {
+          value: 'Option2',
+          label: 'Option2'
+        }, {
+          value: 'Option3',
+          label: 'Option3'
+        }, {
+          value: 'Option4',
+          label: 'Option4'
+        }, {
+          value: 'Option5',
+          label: 'Option5'
+        }],
+        value: ''
         
       };
+      
     },
+   
     methods: {
      
     }
@@ -27,6 +96,325 @@
 
 
 <style>
+
+.center{
+  width: 640px;
+  margin-left: 255px;
+  /* margin-top: 10px; */
+}
+
+.center header{
+  font-family: SofiaProSemiBold;
+  font-size: 28px;
+  margin-left: 30px;
+  margin-top: 44px;
+  color: #252527;
+  float: left;
+}
+
+
+
+.center .el-input__inner {
+  font-family: SofiaProSemiBold;
+  text-align: center;
+   width: 145px;
+  height: 43px;
+   margin-left: 115px;
+   margin-top: 38px;
+  border-radius: 12px;
+  background-color: #F8F8F8;
+  border: 1px solid #F8F8F8;
+  
+
+}
+
+.center .el-input__suffix{
+  margin-top: 20px;
+  color: #252527;
+  
+}
+.el-select .el-input .el-select__caret{
+  color: #252527 !important;
+  text-align: center;
+}
+
+
+
+.center .el-input__inner::placeholder{
+  color: #252527;
+}
+
+.center .el-card__body {
+    padding: 15px;
+}
+
+  .center .box-card-1 {
+    float: left;
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    margin-top: 56px;
+    margin-left: 50px;
+    border-radius: 12px;
+    opacity: 1;
+    background: #FFF4F2 0% 0% no-repeat padding-box;
+  }
+
+  .center .box-card-1 .el-button{
+    font-family: SofiaProSemiBold;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: left;
+    width: 100%;
+    color: #F7523E;
+  
+  }
+  .center .box-card-1 button:focus {
+    outline: none;
+  }
+  .center .box-card-1 button:hover {
+    margin-left: 5%;
+  }
+
+
+.center .box-card-1 i{
+  color: black;
+ padding-left: 70px;
+}
+
+.center .box-card-1 .el-progress-bar{
+  padding: 0;
+  margin-top: -10px;
+}
+
+.center .box-card-1 .el-progress-bar__inner{
+  background: transparent linear-gradient(90deg, #B7B8FC1A 0%, #FA6B5E 100%) 0% 0% no-repeat padding-box;
+}
+
+.center .box-card-1 .el-progress__text{
+  display: none;
+  
+}
+.center .box-card-1 .el-progress-bar__outer{
+  height: 4px !important;
+}
+
+.center .box-card-1 p{
+  font-family: SofiaProRegular;
+  font-size: 13px;
+  
+}
+
+.center .box-card-1 .dot {
+  height: 30px;
+  width: 30px;
+  margin-top: -5px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  display: inline-block;
+  background-image: url('.././assets/images/format-color.png') ;
+  background: transparent url('.././assets/images/format-color.png') 0% 0% no-repeat;
+  background-position: center;
+}
+
+.center .box-card-1 .dot2 {
+  height: 30px;
+  width: 30px;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #FED1CB !important;
+  display: inline-block;
+  background: transparent url('.././assets/images/font-spacing.png') 0% 0% no-repeat;
+  background-position: center;
+}
+
+
+.center .box-card-1 .text1{
+  font-family: SofiaProRegular;
+  font-size: 92px;
+  font-style: normal;
+  padding: 0;
+  color: #F7523E;
+  
+}
+
+.center .box-card-1 .text2{
+  font-family: SofiaProRegular;
+  font-style: normal;
+  font-size: 14px;
+  padding: 0;
+  position: absolute;
+  margin-left: 52px;
+  margin-top: 60px;
+  color: #F7523E;
+	display: inline-block;
+	transform: rotate(-90deg);
+}
+
+
+
+
+
+.center .box-card-2 {
+  position: absolute;
+  width: 220px;
+  height: 320px;
+  margin-top: 56px;
+  margin-left: 300px;
+  border-radius: 12px;
+  float: right;
+  opacity: 1;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  }
+  .center .box-card-2 .el-button{
+    font-family: SofiaProSemiBold;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: left;
+    width: 100%;
+    color: #6657BB;
+  
+  }
+  .center .box-card-2 button:focus {
+    outline: none;
+  }
+  .center .box-card-2 button:hover {
+    margin-left: 5%;
+  }
+
+
+.center .box-card-2 i{
+  color: black;
+ padding-left: 70px;
+}
+
+.center .box-card-2 .el-progress-bar{
+  padding: 0;
+  margin-top: -10px;
+  
+}
+
+.center .box-card-2 .el-progress-bar__inner{
+  background: transparent linear-gradient(90deg, #B7B8FC1A 0%, #CEADFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.center .box-card-2 .el-progress__text{
+  display: none;
+  
+}
+.center .box-card-2 .el-progress-bar__outer{
+  height: 4px !important;
+}
+
+
+  .center .box-card-3 {
+    float: left;
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    margin-top: 395px;
+    margin-left: 50px;
+    border-radius: 12px;
+    opacity: 1;
+    background: #EDF4FA 0% 0% no-repeat padding-box;
+  }
+
+  .center .box-card-3 .el-button{
+    font-family: SofiaProSemiBold;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: left;
+    width: 100%;
+    color: #65609B;
+  
+  }
+  .center .box-card-3 button:focus {
+    outline: none;
+  }
+  .center .box-card-3 button:hover {
+    margin-left: 5%;
+  }
+
+
+.center .box-card-3 i{
+  color: black;
+ padding-left: 70px;
+}
+
+.center .box-card-3 .el-progress-bar{
+  padding: 0;
+  margin-top: -10px;
+  
+}
+
+.center .box-card-3 .el-progress-bar__inner{
+  background: transparent linear-gradient(90deg, #B7B8FC1A 0%, #CEADFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.center .box-card-3 .el-progress__text{
+  display: none;
+  
+}
+
+.center .box-card-3 .el-progress-bar__outer{
+  height: 4px !important;
+}
+
+
+
+  .center .box-card-4 {
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    margin-top: 395px;
+    margin-left: 300px;
+    border-radius: 12px;
+    float: right;
+    opacity: 1;
+    background: #574BB7 0% 0% no-repeat padding-box;
+  }
+
+  .center .box-card-4 .el-button{
+    font-family: SofiaProSemiBold;
+    font-size: 16px;
+    margin-top: 14px;
+    text-align: left;
+    width: 100%;
+    color: #FFFFFF;
+  
+  }
+  .center .box-card-4 button:focus {
+    outline: none;
+  }
+  .center .box-card-4 button:hover {
+    margin-left: 5%;
+  }
+
+
+.center .box-card-4 i{
+  color: #FFFFFF;
+ padding-left: 70px;
+}
+
+.center .box-card-4 .el-progress-bar{
+  padding: 0;
+  margin-top: -10px;
+  
+}
+
+.center .box-card-4 .el-progress-bar__inner{
+  background: transparent linear-gradient(90deg, #F76E651A 0%, #FA6B5E 100%) 0% 0% no-repeat padding-box;
+}
+
+.center .box-card-4 .el-progress__text{
+  display: none;
+  
+}
+
+.center .box-card-4 .el-progress-bar__outer{
+  height: 4px !important;
+}
 
 
 </style>
