@@ -9,7 +9,7 @@
 
     <el-card class="box-card-1">
       <div>
-        <el-button type="text">
+        <el-button type="text" @click="Typography">
           Typography
           <i class="el-icon-arrow-right"></i>
         </el-button>
@@ -27,9 +27,11 @@
       </div>
     </el-card>
 
+
+
     <el-card class="box-card-2">
       <div>
-        <el-button type="text">
+        <el-button type="text" @click="IlIustration">
           IlIustration
           <i class="el-icon-arrow-right"></i>
         </el-button>
@@ -51,9 +53,11 @@
       </div>
     </el-card>
 
+
+
     <el-card class="box-card-3">
       <div>
-        <el-button type="text">
+        <el-button type="text" @click="Guidebook">
           Guidebook
           <i class="el-icon-arrow-right"></i>
         </el-button>
@@ -68,9 +72,11 @@
       </div>
     </el-card>
 
+
+
     <el-card class="box-card-4">
       <div>
-        <el-button type="text">
+        <el-button type="text" @click="Typography4">
           Typography
           <i class="el-icon-arrow-right"></i>
         </el-button>
@@ -123,7 +129,36 @@ export default {
     };
   },
 
-  methods: {}
+  methods: {
+    Typography() {
+        this.$message({
+          message: 'go to Typography Page',
+          type: 'success'
+        });
+      },
+      IlIustration() {
+        this.$message({
+          message: 'go to IlIustration Page',
+          type: 'success'
+        });
+      },
+      Guidebook() {
+        this.$message({
+          message: 'go to Guidebook Page',
+          type: 'success'
+        });
+      },
+
+      Typography4() {
+        this.$message({
+          message: 'go to Typography Page',
+          type: 'success'
+        });
+      },
+
+      
+      
+  }
 };
 </script>
 

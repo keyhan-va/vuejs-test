@@ -10,18 +10,18 @@
 
     <el-badge :value="3" class="icon">
       <a href="#">
-        <i class="el-icon-bell"></i>
+        <i class="el-icon-bell" @click="notification"></i>
       </a>
     </el-badge>
 
     <el-badge class="icon">
       <a href="#">
-        <i class="el-icon-collection-tag"></i>
+        <i class="el-icon-collection-tag" @click="bookmark"></i>
       </a>
     </el-badge>
 
-    <el-button>New Post</el-button>
-    <!-- <hr> -->
+    <el-button :plain="true" @click="newpost">New Post</el-button>
+  
   </div>
 </template>
 
@@ -36,7 +36,30 @@ export default {
       searchinput: ""
     };
   },
-  methods: {}
+  methods: {
+    newpost() {
+        this.$message({
+          message: 'go to New Post',
+          type: 'success'
+        });
+      },
+
+      notification() {
+        this.$message({
+          message: 'go to notification page',
+          type: 'success'
+        });
+      },
+
+      bookmark() {
+        this.$message({
+          message: 'add this to bookmark',
+          type: 'success'
+        });
+      },
+
+    
+  }
 };
 </script>
 
