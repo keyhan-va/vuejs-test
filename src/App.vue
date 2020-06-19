@@ -4,6 +4,8 @@
     <CenterTop />
     <Resources />
     <IliustrationRight />
+    <RightFooter />
+ 
     
   </div>
 </template>
@@ -13,6 +15,7 @@ import Sidebar from './components/Sidebar.vue'
 import CenterTop from './components/CenterTop.vue'
 import Resources from './components/Resources.vue'
 import IliustrationRight from './components/IliustrationRight.vue'
+import RightFooter from './components/RightFooter.vue'
 
 export default {
   name: 'App',
@@ -21,6 +24,7 @@ export default {
     CenterTop,
     Resources,
     IliustrationRight,
+    RightFooter,
   }
 }
 </script>

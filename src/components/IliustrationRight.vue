@@ -32,8 +32,7 @@
         <el-button class="arrowright" type="text"></el-button>
       </div>
     </div>
-    
-    
+
   </div>
  
 </template>
@@ -70,7 +69,9 @@
     margin-left: 877px;
     margin-top: -115px; 
     background-color: #FFFFFF;
+    box-shadow: 0px 3px 50px #0000000D;
     border-radius: 20px;
+
 }
 
 .right .twobox{
@@ -287,6 +288,8 @@
 .right .bottom-boxes .box2 button:focus {
     outline: none;
   }
+
+
 
 
 </style>
