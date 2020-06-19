@@ -3,6 +3,7 @@
     <Sidebar />
     <CenterTop />
     <Resources />
+    <IliustrationRight />
     
   </div>
 </template>
@@ -11,13 +12,15 @@
 import Sidebar from './components/Sidebar.vue'
 import CenterTop from './components/CenterTop.vue'
 import Resources from './components/Resources.vue'
+import IliustrationRight from './components/IliustrationRight.vue'
+
 export default {
   name: 'App',
   components: {
     Sidebar,
     CenterTop,
     Resources,
-
+    IliustrationRight,
   }
 }
 </script>

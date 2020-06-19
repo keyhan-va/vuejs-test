@@ -43,7 +43,7 @@
 
         <div class="twoimage">
           <img class="img1" src=".././assets/images/Path30.png" alt="Path30">
-          <img class="img2" src=".././assets/images/Bitmap.png" alt="Path30">
+          <img class="img2" src=".././assets/images/Bitmap.png" alt="bitmap">
         </div>
 
       </div>
@@ -127,9 +127,11 @@
 <style>
 
 .center{
-  width: 640px;
-  margin-left: 255px;
+  width: 577px;
+  height: 100%;
+  margin-left: 300px;
    margin-top: -7px; 
+   
 }
 
 .center header{

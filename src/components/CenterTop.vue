@@ -42,7 +42,7 @@
 <style>
 .center-top{
     width: 640px;
-    margin-left: 255px;
+    margin-left: 300px;
     margin-top: 70px;
 }
 

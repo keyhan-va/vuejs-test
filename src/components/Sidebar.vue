@@ -70,7 +70,7 @@
 .sidebar .bg-light{
   position: fixed;
   left: 0;
-  width: 255px;
+  width: 300px;
   height: 100%;
   background-color: #fff !important;
   border-right: solid 1.5px rgba(136, 136, 136, 0.137); 
