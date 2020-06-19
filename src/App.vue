@@ -5,34 +5,30 @@
     <Resources />
     <IliustrationRight />
     <RightFooter />
- 
-    
   </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue'
-import CenterTop from './components/CenterTop.vue'
-import Resources from './components/Resources.vue'
-import IliustrationRight from './components/IliustrationRight.vue'
-import RightFooter from './components/RightFooter.vue'
+import Sidebar from "./components/Sidebar.vue";
+import CenterTop from "./components/CenterTop.vue";
+import Resources from "./components/Resources.vue";
+import IliustrationRight from "./components/IliustrationRight.vue";
+import RightFooter from "./components/RightFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Sidebar,
     CenterTop,
     Resources,
     IliustrationRight,
-    RightFooter,
+    RightFooter
   }
-}
+};
 </script>
 
 <style>
 #app {
- 
-  
 }
 
 @font-face {
@@ -47,5 +43,4 @@ export default {
   font-family: SofiaProRegular;
   src: url(fonts/SofiaProRegular.ttf);
 }
-
 </style>
